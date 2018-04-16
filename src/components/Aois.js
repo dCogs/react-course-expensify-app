@@ -9,7 +9,8 @@ export default class ResultsList extends React.Component {
 
     componentDidMount() {
         axios.defaults.withCredentials = true;
-        axios.get (`http://localhost:8000/api/getaois/`)
+        //axios.get (`http://localhost:8000/api/getaois/`)
+        axios.get (`https://skytruth-alerts2.appspot.com/api/getaois/`)
         .then(
             (response) => { 
                 console.log(response);
